@@ -27,7 +27,11 @@ class Block{
 
         
       World.remove(world,this.body);
-    
+      push();
+      this.Visibility = this.Visibility-5;
+      fill("yellow");
+      
+      pop();
       }
     }
 }
